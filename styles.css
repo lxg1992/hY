@@ -1,3 +1,5 @@
+
+
 html, body, div, span, applet, object, iframe,
 p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,10 +47,10 @@ table {
 
 
 nav{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color:white;
-    
+    vertical-align: baseline;
 }
 
 nav ul{
@@ -66,8 +68,25 @@ nav ul li{
 }
 
 nav h2{ 
+    font-weight:1000;
+    font-family:'Playfair Display', serif;
     display: inline;
     padding-left: 10%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family:'Cabin', sans-serif;    
+    color:black;
+    font-weight: 800;
+}
+
+nav ul li a:hover{
+    color:grey;    
+}
+
+nav ul li a:active{
+    color:darkgrey;
 }
 
 
@@ -86,16 +105,17 @@ nav h2{
     position: absolute;
     top: 25%;
     left: 120px;
-    right: 50%;
     bottom: 25%;
+    right: 50%;
     background-color:white;
-    overflow: auto;
-    max-height: 60%;
+    overflow: auto;   
     padding: 10px 0px;
     min-width: 500px;
 }
 
 #dogtext h1{
+    font-weight:bold;
+    font-family:'Playfair Display', serif;
     display: block;
     text-align:center;
     margin-left: 10%;
@@ -104,29 +124,180 @@ nav h2{
 }
 
 #dogtext p{
-
+    font-family:'Cabin', sans-serif;
     margin-left:10%;
     margin-right:10%;
-    line-height: 1.6rem;
+    line-height: 2.0rem;
     padding-bottom:10px;
+    font-size: 120%;
+}
+
+#welcome-content{
+  max-width:100%;
+  min-width: 20%;
+  
+  text-align:center;
+  position:relative;
+  background-color:#f2f2f2;
 
 }
 
-@media screen and (max-width: 700px){
-    nav ul, nav ul li {display: block; float: none;}
+#welcome-content h2{
+    font-family:'Playfair Display',serif;
+    font-weight:bold;
+    margin:0;
+    padding-top:4%;
+    padding-bottom:2%;
+}
+
+#welcomeLeft, #welcomeRight{
+    display:inline-block;
+    vertical-align: text-top;
+    font-size: 300%;        
+}
+
+#welcomeLeft{
+    margin-left:auto;
+    padding-right:10%;
+   
+}
+
+#welcomeRight{
+    padding-left:10%;  
+    margin-right:auto;
+
+}
+
+#welcomeimg{
+    max-width:50%;
+    min-width:5%;
+}
+
+#welcomeDescription{
+    font-family: 'Cabin', sans-serif;
+    font-weight:bold;
+    padding-bottom:1%;
+}
+
+#welcomeDate{
+    font-family: 'Playfair Display',serif;
+    font-style:italic;
+    padding-bottom: 4%;
+}
+
+#grid-content{
+    background-color:white;
+}
+
+#gridContainer{
+    display: inline-block;
+    max-width: 80%;
+    margin: 5% 10%;
+    border-color:white;
+    border-width:1px;
+    border-style:solid;
+    text-align: center;
+    position: relative;
+}
+
+.gridCell{
+    position:relative;
+    max-width:40%;
+    min-width:300px;
+    margin: 1% 1%;
+    display: inline-block;
+    background-color:#f2f2f2;   
+}
+
+.gridImg{
+    height:auto;
+    width:120%;
+   max-width:100%;
+}
+
+.gridText p{
+   padding-bottom: 4%; 
+   padding-left: 3%;
+   padding-right: 3%;
+   max-width: 100%;
+   line-height: 1.5em;
+   font-family: 'Cabin', sans-serif;
+}
+
+.gridText h2{
+    font-family: 'Playfair Display', serif;
+    padding-left:3%;
+    max-width: 100%;    
+    font-weight:bold;
+}
+
+.gridText a{
+    font-family:'Cabin', sans-serif;    
+    text-decoration: none;
+    color:darkred;
+    padding-left: 3%;
+    padding-top:5px;
+    font-weight: bold;
+    
+
+}
+
+.gridText{
+    text-align:left;
+    padding: 3%;
+}
+
+.label{
+    position: relative;
+    display:inline-block;
+    text-align:left;
+    left:35%;
+    top:-10px;
+    background-color:darkred;
+    padding:1%;
+    color:white;
+    font-family:'Cabin', sans-serif;             
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    nav ul, nav ul li {display: block; float: none; padding: 1% 0;}
 
     nav h2 {display: block;text-align:center; padding:0;}
 
     #dogtext{
-        position:aboslute;
+        position:absolute;
         left:10%;
         right:10%;
         background-color:white;
         opacity: 0.8;
         overflow: auto;
-        min-width: 315px;
-
-
+        min-width: 200px;
     }
+
+    #dogtext h1{
+        font-size:1.5em;
+    }
+
+    #dogtext p{
+        line-height:1.5em;
+        font-size:0.8em;
+    }
+
+    .gridCell{
+        max-width: 80%;
+    }
+
+
+
+
 
 }
