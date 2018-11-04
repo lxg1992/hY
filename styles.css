@@ -45,6 +45,7 @@ table {
 }
 
 
+/* Navigation */
 
 nav{
     padding-top: 25px;
@@ -90,6 +91,7 @@ nav ul li a:active{
 }
 
 
+/* Dog Section */
 
 #dog-content{
     position:relative;
@@ -131,6 +133,8 @@ nav ul li a:active{
     padding-bottom:10px;
     font-size: 120%;
 }
+
+/* Welcome Section */
 
 #welcome-content{
   max-width:100%;
@@ -194,6 +198,8 @@ nav ul li a:active{
     font-style:italic;
     padding-bottom: 4%;
 }
+
+/* Grid Section */
 
 #grid-content{
     background-color:white;
@@ -268,6 +274,8 @@ nav ul li a:active{
 
 }
 
+/* Info, Navigation, Email */
+
 #info-content{
     background-color:rgb(70, 70, 70);
     color:white;
@@ -327,6 +335,7 @@ nav ul li a:active{
     text-align:left;
 }
 
+/*Normally Unacceptable */
 h4{
     margin: 0 0;
     padding: 3% 0;
